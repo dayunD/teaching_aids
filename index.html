@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업 기자재 체크리스트</title>
+    <style>
+        /* 스타일 시트 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-input {
+            margin-right: 10px;
+        }
+
+        .number-input {
+            width: 30px;
+            text-align: center;
+        }
+
+        .transparent-input {
+            border: none;
+            background: transparent;
+            width: 200px;
+            /* 조정 가능한 너비 */
+            border-bottom: 1px solid #ccc;
+            /* 밑줄 추가 */
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .transparent-input:focus {
+            outline: none;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>수업 기자재 체크리스트</h1>
+    <!-- 입력 폼 -->
+    <form id="classForm">
+        <!-- 각 과목과 개수 입력 -->
+        <input type="checkbox" name="class1" value="①신소재"> ①신소재
+        <input type="number" name="count1" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class2" value="②반도체"> ②반도체
+        <input type="number" name="count2" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class3" value="③의공학"> ③의공학
+        <input type="number" name="count3" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class4" value="④스마트팜"> ④스마트팜
+        <input type="number" name="count4" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class5" value="⑤신재생에너지"> ⑤신재생에너지
+        <input type="number" name="count5" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class6" value="⑥반가워 머신러닝"> ⑥반가워 머신러닝
+        <input type="number" name="count6" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class7" value="⑦똑똑한 상상이룸"> ⑦똑똑한 상상이룸
+        <input type="number" name="count7" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class8" value="⑧인공지능 딥러닝"> ⑧인공지능 딥러닝
+        <input type="number" name="count8" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class9" value="⑨프롬프트 엔지니어"> ⑨프롬프트 엔지니어
+        <input type="number" name="count9" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class10" value="⑩디지털기기 활용"> ⑩디지털기기 활용
+        <input type="number" name="count10" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class11" value="⑪빅데이터 경제"> ⑪빅데이터 경제
+        <input type="number" name="count11" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class12" value="⑫빅데이터 분석"> ⑫빅데이터 분석
+        <input type="number" name="count12" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class13" value="⑬메타버스"> ⑬메타버스
+        <input type="number" name="count13" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class14" value="⑭VR 프로그램 개발"> ⑭VR 프로그램 개발
+        <input type="number" name="count14" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class15" value="⑮AR 개발"> ⑮AR 개발
+        <input type="number" name="count15" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class16" value="⑯콘텐츠 기획"> ⑯콘텐츠 기획
+        <input type="number" name="count16" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class17" value="⑰1인 미디어"> ⑰1인 미디어
+        <input type="number" name="count17" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class18" value="⑱게임 개발"> ⑱게임 개발
+        <input type="number" name="count18" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class19" value="⑲앱 개발"> ⑲앱 개발
+        <input type="number" name="count19" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class20" value="⑳시뮬레이션"> ⑳시뮬레이션
+        <input type="number" name="count20" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class21" value="㉑메이커"> ㉑메이커
+        <input type="number" name="count21" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class22" value="㉒기업브랜딩(로고제작)"> ㉒기업브랜딩(로고제작)
+        <input type="number" name="count22" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class23" value="㉓애니메이터"> ㉓애니메이터
+        <input type="number" name="count23" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class24" value="㉔시각 디자인"> ㉔시각 디자인
+        <input type="number" name="count24" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class25" value="㉕3D 설계 모델링"> ㉕3D 설계 모델링
+        <input type="number" name="count25" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class26" value="㉖로봇"> ㉖로봇
+        <input type="number" name="count26" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class27" value="㉗디지털 헬스"> ㉗디지털 헬스
+        <input type="number" name="count27" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class28" value="㉘자율주행"> ㉘자율주행
+        <input type="number" name="count28" min="1" value="1" class="number-input"><br>
+        <input type="checkbox" name="class29" value="㉙모빌리티"> ㉙모빌리티
+        <input type="number" name="count29" min="1" value="1" class="number-input"><br>
+        <!-- 선택한 과목 확인 버튼 -->
+        <button type="button" onclick="showSelectedMaterials()">선택한 과목 확인</button><br>
+        <!-- 학교명 입력 필드 -->
+        <input type="text" name="schoolName" placeholder="학교명 입력" class="transparent-input">
+    </form>
+    <!-- 선택한 과목 리스트 표시 -->
+    <div id="selectedMaterialsList"></div>
+
+    <!-- 자바스크립트 코드 -->
+    <script>
+        // JavaScript 코드
+        function showSelectedMaterials() {
+            // 선택한 과목 리스트 표시하는 함수
+            var selectedMaterialsListDiv = document.getElementById("selectedMaterialsList");
+            var selectedClasses = document.querySelectorAll('input[name^="class"]:checked');
+            var counts = document.querySelectorAll('input[name^="count"]');
+            var schoolName = document.querySelector('input[name="schoolName"]').value;
+            var html = schoolName;
+
+            selectedClasses.forEach(function (checkbox) {
+                var className = checkbox.value;
+                var countInput = checkbox.nextElementSibling; // 체크박스 다음에 있는 입력 필드를 가져옴
+                var count = countInput.value; // 개수를 입력 필드에서 가져옴
+                var materials = getMaterialsForClass(className);
+                html += "<p>" + className + " : ";
+                materials.forEach(function (material, i) {
+                    if (i !== 0) {
+                        html += ", ";
+                    }
+                    html += material;
+                });
+                html += " <span class='red-text'>" + "(" + count + "개반)</span></p>";
+            });
+
+
+            html += '<button onclick="printSelectedMaterials()">인쇄</button>';
+            selectedMaterialsListDiv.innerHTML = html;
+        }
+
+
+
+        function printSelectedMaterials() {
+            var printContents = document.getElementById("selectedMaterialsList").innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+
+        function getMaterialsForClass(className) {
+            // 각 과목에 대한 재료를 반환하는 함수
+            switch (className) {
+                case "①신소재":
+                    return ["신소재 계획서", "배치 우드락 8", "나무판", "수수깡", "글루건", "테이프", "A4", "가위/칼", "선풍기8", "풍량측정기16", "멀티탭"];
+                case "②반도체":
+                    return ["태블릿", "터치펜"];
+                case "③의공학":
+                    return ["노트북(2인1조)", "충전기/마우스", "멀티탭", "아두이노의공학키트", "거짓말탐지기", "패치", "유인물"];
+                case "④스마트팜":
+                    return ["유킷(스마트팜용)", "기물"];
+                case "⑤신재생에너지":
+                    return ["레고브릭", "바퀴", "솔라브릭(태양광판/usb선풍기)", "할로겐등", "멀티탭1"];
+                case "⑥반가워 머신러닝":
+                    return ["컴퓨터실(웹캠, 포스트잇) <b>or</b> 노트북(2인1조)", "충전기/마우스", "멀티탭", "포스트잇"];
+                case "⑦똑똑한 상상이룸":
+                    return ["계획서", "웹캠", "노트북(2인1조)", "충전기/마우스", "멀티탭", "아두이노똑상키트", "4교시 시 수수깡/우드락/글루건"];
+                case "⑧인공지능 딥러닝":
+                    return ["태블릿"];
+                case "⑨프롬프트 엔지니어":
+                    return ["컴퓨터실 사용"];
+                case "⑩디지털기기 활용":
+                    return ["노트북(2인1조)", "충전기/마우스", "멀티탭"];
+                case "⑪빅데이터 경제":
+                    return ["주식 유인물", "모자", "이름표"];
+                case "⑫빅데이터 분석":
+                    return ["컴퓨터실 <b>or</b> 노트북(1인)", "충전기/마우스", "멀티탭"];
+                case "⑬메타버스":
+                    return ["중/고등 메타버스 박스"];
+                case "⑭VR 프로그램 개발":
+                    return ["카드보드", "테이프"];
+                case "⑮AR 개발":
+                    return ["머지큐브"];
+                case "⑯콘텐츠 기획":
+                    return ["콘티", "삼각대"];
+                case "⑰1인 미디어":
+                    return ["콘티", "과자", "크로마키4"];
+                case "⑱게임 개발":
+                    return ["컴퓨터실 <b>or</b> 노트북(1인)", "충전기/마우스", "멀티탭"];
+                case "⑲앱 개발":
+                    return ["컴퓨터실 <b>or</b> 노트북(1인)", "충전기/마우스", "멀티탭 <b>or</b> 태블릿"];
+                case "⑳시뮬레이션":
+                    return ["노트북(1인)", "충전기/마우스", "멀티탭"];
+                case "㉑메이커":
+                    return ["노트북(2인1조)", "충전기/마우스", "멀티탭", "수수깡", "글루건", "아두이노rgb키트"];
+                case "㉒기업브랜딩(로고제작)":
+                    return ["유인물", "로고프린터2" , "SELPHY폰", "이면지"];
+                case "㉓애니메이터":
+                    return ["터치펜", "태블릿", "스토리보드"];
+                case "㉔시각 디자인":
+                    return ["태블릿", "정보전달유인물", "와이어프레임용 이면지"];
+                case "㉕3D 설계 모델링":
+                    return ["3d펜", "3d펜 충전기&케이블", "도안", "필라멘트", "멀티탭"];
+                case "㉖로봇":
+                    return ["유킷", "유킷 박스", "배틀맵2"];
+                case "㉗디지털 헬스":
+                    return ["노트북(2인1조)", "충전기/마우스", "멀티탭", "아두이노디지털헬스키트", "유인물"];
+                case "㉘자율주행":
+                    return ["네오봇", "유킷 박스(빨강)", "라인맵8"];
+                case "㉙모빌리티":
+                    return ["재규어", "리포배터리", "다운로드 케이블", "노트북(2인1조)", "충전기/마우스", "멀티탭", "라인트레이서맵"];
+                default:
+                    return [];
+            }
+        }
+    </script>
+</body>
+
+</html>
